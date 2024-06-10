@@ -1,6 +1,6 @@
 # Travel Tracker Web App
 
-This is a simple web application built with Node.js and Express.js for tracking visited countries. Users can add countries they have visited, and the application will display the total number of visited countries along with a list of them.
+This is a simple web application built with Node.js and Express.js for tracking visited countries. Users can add countries they have visited, and the application will display the total number of visited countries along with a list of them. The application supports multiple users, each with a customizable color for visited countries.
 
 ## Prerequisites
 
@@ -49,7 +49,14 @@ The server will start running at http://localhost:3000. You can access the appli
 Features
 Add Visited Countries: Users can add countries they have visited.
 Display Visited Countries: The application displays the total number of visited countries and lists them on the home page.
+Multiple Users: Support for multiple users with individual lists of visited countries.
+Custom Colors: Each user can set a custom color for their visited countries.
 Error Handling: Graceful handling of errors such as invalid country names or duplicate entries.
+API Endpoints
+GET /: Home page displaying the total number of visited countries and the list of visited countries.
+POST /add: Add a new visited country for the current user.
+POST /user: Switch between users or add a new user.
+POST /new: Create a new user with a custom color.
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
